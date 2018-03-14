@@ -33,11 +33,13 @@ class UITestClass: XCTestCase {
         let app = XCUIApplication()
         let typeSomethingTextField = app.textFields["type Something"]
         typeSomethingTextField.tap()
-        typeSomethingTextField.typeText("Firoj")
+        typeSomethingTextField.typeText("Firoj shaikh")
         
         let checkValidOrNotButton = app.buttons["Check valid or not"]
         checkValidOrNotButton.tap()
         typeSomethingTextField.typeText("1")
+        checkValidOrNotButton.tap()
+        typeSomethingTextField.typeText("23")
         checkValidOrNotButton.tap()
         
     }
