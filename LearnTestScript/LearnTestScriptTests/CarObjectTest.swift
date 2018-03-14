@@ -61,4 +61,6 @@ class CarObjectTest: XCTestCase {
         XCTAssertEqual(ferrari.makeAddition(a: valueOne, b: valueTwo), expectedValue)
     }
     
+    
+    
 }

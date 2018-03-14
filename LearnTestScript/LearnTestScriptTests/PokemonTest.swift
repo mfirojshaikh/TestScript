@@ -41,6 +41,8 @@ class PokemonTest: XCTestCase {
         let health = objPokemon.health
         objPokemon.attack(enemy: objPokemon)
         XCTAssertTrue(objPokemon.health < health)
+        
+        XCTAssert((objPokemon.type == .Fire && objPokemon.attackType == .Water) && objPokemon.health < health , "health is reduced as expected")
     }
     
 }
